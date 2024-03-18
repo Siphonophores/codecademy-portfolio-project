@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #222528;
+    margin: 2rem 2rem;
+}
+
+h1 {
+    margin: 0 0 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2.5rem;
+}
+
+/* Section: Project Thumbnails */
+section.project-thumbnails {
+    display: block;
+    margin: 0;
+}
+    .project-thumbnail {
+        margin: 0 0 1rem;
+        /* padding: 1rem, 0; */
+    }
+    .project-thumbnail img {
+        margin: 0;
+        width: 100%;
+        border-radius: 0.5rem;
+        border: 2px solid #222528;
+    }
+    .project-thumbnail figcaption {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    /* Section: Project */
+    section.project-container {
+        display: block;
+        /* width: 100%; */
+    }   
+
+
+/* Section: Project */
+section.project-container {
+    display: block;
+    width: 100%;
+}
+    .project {
+        display: block;
+    }
+    .project-cover img {
+        width: 100%;
+        border-radius: 0.5rem;
+        border: 2px solid #222528;
+    }
+    .project-title {
+        margin: 0.5rem 0 1.5rem;
+    }
+    .project-info {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 3rem;
+    }
+    .description {
+        display: grid;
+        grid-template-rows: max-content max-content;
+        gap: 1rem;
+    }
+    .description .tech-list {
+        list-style: none;
+        padding: 0;
+    }
+        .tech-list li {
+            display: inline;
+            background-color: #3d3f41;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            line-height: 2.15;
+        }
+
+    .project-features {
+        display: block;
+    }
+    figure.feature {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+    }
+        .feature img {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 6rem;
+        }
+        .feature h3 {
+            margin: 0 0 0.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }

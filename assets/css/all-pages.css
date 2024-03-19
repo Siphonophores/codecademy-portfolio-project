@@ -1,0 +1,50 @@
+@import url('https://themes.googleusercontent.com/fonts/css?kit=jcFLf8ZX0K0voV0Wtl8DVw_doqyKVDqcuTmXXd6LYzqkS3WukTqFI0As5VBHrgtlh6blVmj_hhxT2c7d-eefKg');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px; /* This sizes all pages */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    color: #222528;
+    margin: 2rem auto;
+    min-width: 42rem;
+    max-width: 64rem;
+}
+
+h1 {
+    margin: 0 0 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+a {
+    color: #0079f3;
+    text-decoration: none;
+}
+a:hover {
+    color: #0062d9;
+}
+a:active {
+    color: #0066FF;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}

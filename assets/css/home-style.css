@@ -1,31 +1,31 @@
-* {
-    margin: 0;
-}
+/* STYLES FOR INDEX.HTML */
 
-html {
-    box-sizing: border-box;
+header {
+    display: flex;
+    /* justify-content: center; */
 }
-
-body {
-    font-family: "Poppins", sans-serif;
-    color: #222528;
-    margin: 2rem 2rem;
-}
-
-h1 {
-    margin: 0 0 1.5rem;
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 1.2;
-}
-h2 {
-    font-size: 2rem;
-    font-weight: 600;
-}
-h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-}
+    nav {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        width: 100%;
+        margin: 0 0 2rem;
+    }
+        a.contact-button {
+            background-color: #0079f3;
+            color: white;
+            font-weight: 500;
+            padding: 0.25rem 1.5rem;
+            border-radius: 0.25rem;
+            line-height: 2.15;
+        }
+        a.contact-button:hover {
+            background-color: #0062d9;
+            transition: background-color 0.5s ease;
+        }
+        a.contact-button:focus {
+            background-color: #0066FF;
+        }
 
 main {
     display: grid;
@@ -52,12 +52,6 @@ section.project-thumbnails {
         font-size: 1rem;
         font-weight: 500;
     }
-
-    /* Section: Project */
-    section.project-container {
-        display: block;
-        /* width: 100%; */
-    }   
 
 
 /* Section: Project */
@@ -86,10 +80,10 @@ section.project-container {
         grid-template-rows: max-content max-content;
         gap: 1rem;
     }
-    .description .tech-list {
-        list-style: none;
-        padding: 0;
-    }
+        .tech-list {
+            list-style: none;
+            padding: 0;
+        }
         .tech-list li {
             display: inline;
             background-color: #3d3f41;
@@ -103,19 +97,17 @@ section.project-container {
         display: block;
     }
     figure.feature {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        justify-content: center;
+        display: block;
+        text-align: center;
     }
         .feature img {
-            margin: 0 auto;
-            width: 80%;
+            /* width: 80%; */
             max-width: 6rem;
         }
         .feature h3 {
             margin: 0 0 0.5rem;
-            text-align: center;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             font-weight: 500;
         }
+        
+

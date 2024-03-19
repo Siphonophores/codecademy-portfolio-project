@@ -1,0 +1,122 @@
+/* STYLES FOR CONTACT.HTML */
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 0.25rem 0 0.25rem;
+}
+    h1 {
+        margin: 0 0 0.75rem;    
+    }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+.profile-pic-container {
+    display: flex;
+    margin: 0 0 1.5rem;
+    width: 12rem;
+}
+
+img.profile-pic {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #222528;
+}
+
+.bio-description {
+    display: flex;
+    text-align: center;
+    margin: 0 0 1.5rem;
+    max-width: 36rem;
+}
+
+nav.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0 2.5rem;
+}
+    .social-links-list {
+        display: flex;
+        list-style: none;
+    }
+    .social-links-list li {
+        margin: 0 0.5rem;
+        
+    }
+    .social-links a {
+        margin: 0 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .social-logo {
+        width: 2rem;
+        height: 2rem;
+    }
+
+h3.or-form {
+    margin: 0 0 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 2rem;
+    padding: 3rem;
+    min-width: 24rem;
+    border: 2px solid #222528;
+    border-radius: 0.5rem;
+}
+    form h2 {
+        margin: 0 0 1.5rem;
+    }
+    label {
+        margin: 0 0 0.25rem;
+        font-weight: 600;
+    }
+    input {
+        margin: 0 0 1rem;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: 2px solid #222528;
+        min-width: 16rem;
+        width: 100%;
+    }
+    textarea {
+        margin: 0 0 1rem;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: 2px solid #222528;
+        min-width: 16rem;
+        max-width: 32rem;
+        min-height: 2rem;
+        max-height: 12rem;
+        width: 100%;
+    }
+
+    button.submit-form {
+        margin: 1.25rem 0 0.5rem;
+        padding: 0.5rem 2rem;
+        border-radius: 0.25rem;
+        border: none;
+        background-color: #0079f3;
+        color: white;
+        font-size: 1.25rem;
+        font-weight: 600;
+        width: 100%;
+    }
+    button.submit-form:hover {
+        background-color: #0062d9;
+        transition: background-color 0.5s ease;
+    }
+    button.submit-form:focus {
+        background-color: #0066FF;
+    }

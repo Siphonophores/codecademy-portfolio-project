@@ -2,6 +2,7 @@
 
 header {
     display: flex;
+    margin: 0 0 3.5rem;
     /* justify-content: center; */
 }
     nav {
@@ -9,7 +10,6 @@ header {
         justify-content: end;
         align-items: end;
         width: 100%;
-        margin: 0 0 2rem;
     }
         a.contact-button {
             background-color: #0079f3;
@@ -30,7 +30,7 @@ header {
 main {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 2.5rem;
+    gap: 5rem;
 }
 
 /* Section: Project Thumbnails */
@@ -38,6 +38,15 @@ section.project-thumbnails {
     display: block;
     margin: 0;
 }
+    .project-thumbnails h3 {
+        margin: 0 0 0.75rem;
+        color: #cdd4d8;
+    }
+    .project-thumbnails h4 {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.25;
+    }
     .project-thumbnail {
         margin: 0 0 1rem;
         /* padding: 1rem, 0; */
@@ -59,6 +68,9 @@ section.project-container {
     display: block;
     width: 100%;
 }
+    .project-container h2 {
+        margin: 0.75rem 0 1.5rem;
+    }
     .project {
         display: block;
     }
@@ -86,15 +98,17 @@ section.project-container {
         }
         .tech-list li {
             display: inline;
-            background-color: #3d3f41;
-            color: white;
+            background-color: #eff2f3;
+            color: #91acc5;
             padding: 0.25rem 0.5rem;
             border-radius: 0.25rem;
             line-height: 2.15;
         }
 
     .project-features {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
     figure.feature {
         display: block;
@@ -102,9 +116,9 @@ section.project-container {
     }
         .feature img {
             /* width: 80%; */
-            max-width: 6rem;
+            max-width: 4rem;
         }
-        .feature h3 {
+        .feature h4 {
             margin: 0 0 0.5rem;
             font-size: 0.9rem;
             font-weight: 500;

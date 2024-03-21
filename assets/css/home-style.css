@@ -30,7 +30,7 @@ header {
 main {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 5rem;
+    gap: 4rem;
 }
 
 /* Section: Project Thumbnails */
@@ -49,21 +49,36 @@ section.project-thumbnails {
     }
     .project-thumbnail {
         margin: 0 0 1rem;
-        /* padding: 1rem, 0; */
+        cursor: pointer;
     }
     .project-thumbnail img {
         margin: 0;
         width: 100%;
         border-radius: 0.5rem;
-        border: 2px solid #222528;
+        border: 0.0625rem solid #6e7881;
+    }
+    .project-thumbnail img:hover {
+        transform: scale(1.015);
+        transition: transform 0.2s ease, opacity 0.2s ease;
+        opacity: 0.8;
     }
     .project-thumbnail figcaption {
         font-size: 1rem;
         font-weight: 500;
     }
 
+    
 
 /* Section: Project */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 102, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 0 25px rgba(0, 102, 255, 0);
+    }
+}
+
 section.project-container {
     display: block;
     width: 100%;
@@ -77,7 +92,12 @@ section.project-container {
     .project-cover img {
         width: 100%;
         border-radius: 0.5rem;
-        border: 2px solid #222528;
+        border: 0.0625rem solid #53595e;
+        box-shadow: 0.75rem 2rem 5rem 0.25rem rgba(237, 244, 255, 0.5);
+        transition: opacity 0.5s;
+    }
+    .project-cover img.active {
+        animation: pulse 0.225s;
     }
     .project-title {
         margin: 0.5rem 0 1.5rem;
@@ -93,16 +113,24 @@ section.project-container {
         gap: 1rem;
     }
         .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
             list-style: none;
             padding: 0;
         }
         .tech-list li {
             display: inline;
-            background-color: #eff2f3;
+            background-color: #eff0f3;
             color: #91acc5;
-            padding: 0.25rem 0.5rem;
+            padding: 0 1rem;
             border-radius: 0.25rem;
             line-height: 2.15;
+        }
+        .tech-list li:hover {
+            background-color: #e9edf5;
+            color: #0066FF;
+            transition: background-color 0.25s ease;
         }
 
     .project-features {

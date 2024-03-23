@@ -2,37 +2,43 @@
     {
         "id": "project-1",
         "title": "Corato",
-        "description": "A bid management tool for the construction industry. The workflow is similar to RFP/RFQ software in procurement. This project involved user research, wireframing, prototyping, and front-end development. The project was built using HTML and CSS. The end user would be able to see order flow displayed in a custom map view, and monitor the status of active bid processes.",
-        "tech": ["HTML", "CSS", "Wireframing", "Prototyping", "UX Research"]
+        "description": "A bid management tool for the construction industry. The workflow is similar to RFP/RFQ software in procurement. This project involved user research, wireframing, prototyping, and front-end development. The end user would be able to see order flow displayed in a custom map view, and monitor the status of active bid processes.",
+        "tech": ["HTML", "CSS", "Wireframing", "Prototyping", "UX Research"],
+        "coverImgSrc": "./assets/img/projects/Corato_Main2.png"
     },
     {
         "id": "project-2",
         "title": "Muvin",
         "description": "A home fitness app that provides workout routines, exercise tracking, and progress monitoring. Users can access a variety of workout programs, track their workouts, and view their progress over time. The app includes features such as exercise videos, customizable workout plans, and performance analytics.",
-        "tech": ["HTML", "CSS", "Figma", "Illustrator"]
+        "tech": ["HTML", "CSS", "Figma", "Illustrator"],
+        "coverImgSrc": "./assets/img/projects/Muvin_Main2.png"
     },
     {
         "id": "project-3",
         "title": "Heelum Data Recovery",
         "description": "A job tracking and reporting tool for a data recovery company. The software allows the company to communicate the status of the recovery process with their customers. Users can see the source of the hardware failure depicted in an illustration of their hard drive, get a detailed report of the specialists' findings, and monitor the progress of the recovery process as it passes from one stage to the next. Users can see quotes, approve the job and pay for the service. The main features included administrative dashboards, report creation tools, and an internal messaging system.",
-        "tech": ["HTML", "CSS", "Illustrator", "Angular", "Node.js", "Express", "MongoDB"]
+        "tech": ["HTML", "CSS", "Illustrator", "Angular", "Node.js", "Express", "MongoDB"],
+        "coverImgSrc": "./assets/img/projects/HeelumDR_Main.png"
     },
     {
         "id": "project-4",
         "title": "Onyx Recuperación",
         "description": "This was the original version of the Heelum Data Recovery project. The project also included kickstarting the branding and marketing of the company. Our involvement in this project touched on many areas of the business, including the creation of the company's logo, website, marketing materials and tech infrastructure. The company went from scratch to a fully operational business in a matter of months and was active for just over 11 years.",
-        "tech": ["Illustrator"]
+        "tech": ["Illustrator"],
+        "coverImgSrc": "./assets/img/projects/Onyx_Main.png"
     },
     {
         "id": "project-5",
         "title": "CVI",
         "description": "A PR and Marketing project that involved the creation of distributed agents to monitor and participate in brand-related discussions on social media. The project also included the creation of data visualizations in order to explain complex data and processes to non-technical stakeholders.",
-        "tech": ["UX Research", "Illustrator", "Jarvee", "Facebook"]
+        "tech": ["UX Research", "Illustrator", "Jarvee", "Facebook"],
+        "coverImgSrc": "./assets/img/projects/Main_CVI.png"
     },
     {
         "id": "project-6",
         "title": "GIA",
         "description": "A minimalistic dashboard for an insurance sales company. The software was intended to allow the company to monitor the performance of their sales agents. The project involved wireframing and prototyping the user interface and creation of marketing campaigns on social media.",
-        "tech": ["Illustrator", "UX Research", "Facebook Business Manager"]
+        "tech": ["Illustrator", "UX Research", "Facebook Business Manager"],
+        "coverImgSrc": "./assets/img/projects/Main_GIA.png"
     }
 ]

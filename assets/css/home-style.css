@@ -30,7 +30,7 @@ header {
 main {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 4rem;
+    gap: 5%;
 }
 
 /* Section: Project Thumbnails */
@@ -81,13 +81,14 @@ section.project-thumbnails {
 
 section.project-container {
     display: block;
-    width: 100%;
+    width: 90%;
 }
     .project-container h2 {
         margin: 0.75rem 0 1.5rem;
     }
     .project {
         display: block;
+        margin: 0 0 3rem;
     }
     .project-cover img {
         width: 100%;

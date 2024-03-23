@@ -1,0 +1,52 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    /* Your CSS rules for small devices go here */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 767px) {
+    /* Your CSS rules for medium devices go here */
+    section.project-thumbnails {
+        display: none;
+    }
+    header {
+        width: 95%;
+    }
+    main {
+        grid-template-columns: 1fr;
+    }
+    body {
+        margin: 1rem auto;
+        padding: 5%;
+        width: 95%;
+        font-size: 0.9rem;
+    }
+    section.project-container {
+        width: 95%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    /* Your CSS rules for large devices go here */
+
+    body {
+        margin: 1rem auto;
+        padding: 1rem;
+        width: 95%;
+        font-size: 0.95rem;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    /* Your CSS rules for extra large devices go here */
+
+}

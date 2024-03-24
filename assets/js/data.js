@@ -8,12 +8,13 @@ function addProjects(projectsData, currentProjectIndex=0) {
 
     // Create a new array that starts from the next project after the current one
     var reorderedProjectsData = projectsData.slice(currentProjectIndex + 1).concat(projectsData.slice(0, currentProjectIndex + 1));
+    console.log(reorderedProjectsData);
 
     // Loop through the projectsData array starting from the second project
     for (var i = 1; i < reorderedProjectsData.length; i++) {
         var projectData = reorderedProjectsData[i];
 
-        // Create new elements for the project
+        // Create new article element (project container)
         var projectArticle = document.createElement('article');
         // Assign classes
         projectArticle.className = 'project additional-project';
@@ -145,6 +146,7 @@ window.onload = function() {
 
                         } else {
                             // The user clicked on a different project thumbnail
+                            // Transition cover image
                             currentCover.style.opacity = 0;
                             setTimeout(function() {
                                 currentCover.src = thumbnailImgSrc;
@@ -164,6 +166,18 @@ window.onload = function() {
                                 li.textContent = tech;
                                 techList.appendChild(li);
                             });
+                            // UPDATE ACTIVE PROJECT
+                            // remove the "active" class from the currently active project
+                            var activeProject = document.querySelector('.project.active');
+                            if (activeProject) {
+                                activeProject.classList.remove('active');
+                            }
+                            // add the "active" class to the clicked project
+                            var projectId = `project-${index + 1}`;
+                            var projectElement = document.getElementById(projectId);
+                            if (projectElement) {
+                                projectElement.classList.add('active');
+                            }
                             currentProjectIndex = index;
                         }
 
